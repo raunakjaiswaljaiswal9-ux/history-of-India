@@ -9,7 +9,9 @@ cd /d "%~dp0"
 
 where git >nul 2>nul
 if %errorlevel% neq 0 (
-    if exist "C:\Program Files\Git\cmd\git.exe" (
+    if exist "%LOCALAPPDATA%\Microsoft\WinGet\Packages\Git.MinGit_Microsoft.Winget.Source_8wekyb3d8bbwe\cmd\git.exe" (
+        set "PATH=%LOCALAPPDATA%\Microsoft\WinGet\Packages\Git.MinGit_Microsoft.Winget.Source_8wekyb3d8bbwe\cmd;!PATH!"
+    ) else if exist "C:\Program Files\Git\cmd\git.exe" (
         set "PATH=C:\Program Files\Git\cmd;!PATH!"
     ) else if exist "%LOCALAPPDATA%\Programs\Git\cmd\git.exe" (
         set "PATH=%LOCALAPPDATA%\Programs\Git\cmd;!PATH!"

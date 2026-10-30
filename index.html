@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History of India — A Civilizational Odyssey</title>
+  <meta name="description" content="An interactive chronicle of India's 5,000-year history from the Indus Valley Civilization to the Modern Space-Age Republic. Built with Sony-inspired minimalist aesthetics.">
+  
+  <!-- Google Fonts: Editorial Serif + Precision Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Sony Darkroom Design System Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Sony Navigation Bar
+       ========================================================================= -->
+  <header class="sony-nav" id="sony-navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-brand">
+        <div class="nav-brand-symbol" aria-hidden="true"></div>
+        <span>India<span style="color: var(--text-accent); font-style: italic;">·</span>Archive</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#chronology" class="nav-link active">Chronology</a></li>
+          <li><a href="#gallery" class="nav-link">Artifacts</a></li>
+          <li><a href="#dynasties" class="nav-link">Empires</a></li>
+          <li><a href="#voices" class="nav-link">Voices</a></li>
+          <li><a href="javascript:void(0)" onclick="HistoryApp.Quiz.openQuizModal()" class="nav-link" style="color: var(--text-gold);">Quiz ✦</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Python Localhost Server Status Indicator -->
+        <span class="badge" id="server-status-pill" style="font-size: 0.7rem; padding: 0.35rem 0.75rem; gap: 0.45rem; cursor: default;">
+          <span style="width: 7px; height: 7px; background: #a1a1aa; border-radius: 50%; display: inline-block;"></span> Client Mode
+        </span>
+
+        <!-- Ambient Atmosphere Synthesizer Button -->
+        <button class="audio-toggle-btn" id="ambient-audio-toggle" title="Toggle Meditative Tanpura Atmosphere">
+          <div class="audio-equalizer" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="label-text">Atmosphere</span>
+        </button>
+
+        <!-- Search Drawer Trigger -->
+        <button class="btn-icon-only" onclick="HistoryApp.openDrawer('search')" title="Instant Search" aria-label="Search History">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Saved Bookmarks Drawer Trigger -->
+        <button class="btn-icon-only" onclick="HistoryApp.openDrawer('bookmarks')" title="Your Saved Collection" aria-label="Saved Collection" style="position: relative;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span id="bookmarks-count-badge" class="badge badge-gold" style="position: absolute; top: -6px; right: -6px; padding: 0.1rem 0.35rem; font-size: 0.6rem; display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. Hero Section (Cinematic Sony Masthead)
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-backdrop" aria-hidden="true">
+      <img class="hero-backdrop-img" 
+           src="images/taj_mahal.jpg" 
+           alt="Subcontinental Heritage Backdrop"
+           onerror="this.onerror=null; this.src='images/ashoka_lion.jpg';">
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge-wrap">
+        <span class="badge badge-gold badge-glow">5,000 Years · 7 Flagship Epochs · 1 Civilization</span>
+      </div>
+
+      <h1 class="hero-title">
+        The Civilizational Odyssey <br>
+        of <span class="gold-text">Bharat</span>
+      </h1>
+
+      <p class="hero-description">
+        From the bronze-age planned streets of Mohenjo-daro to the philosophical dawn of the Upanishads, the oceanic fleets of the Cholas, and the frontiers of lunar exploration.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#chronology" class="btn btn-primary">Begin the Journey ↓</a>
+        <a href="#gallery" class="btn btn-outline">Explore Artifacts</a>
+        <button onclick="HistoryApp.Quiz.openQuizModal()" class="btn btn-gold">Test Your Knowledge ✦</button>
+      </div>
+    </div>
+
+    <!-- Live Scrubber Strip at Hero Base -->
+    <div class="container hero-era-strip">
+      <div class="hero-era-strip-label">Epochs at a Glance</div>
+      <div class="hero-era-track" id="hero-era-track">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. Dual-Mode Interactive Chronology & Timeline
+       ========================================================================= -->
+  <section class="section-spacing" id="chronology" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">The Master Chronicle</span>
+        <h2 class="section-title">Timeline of Civilizations</h2>
+        <p class="section-desc">
+          Navigate 5,000 years of subcontinent history. Explore turning points, architectural feats, and socio-economic systems through our dual-view timeline.
+        </p>
+      </div>
+
+      <!-- Controls & Filter Toolbar -->
+      <div class="timeline-control-bar">
+        <div class="era-filter-group" role="tablist" aria-label="Era Categories">
+          <button class="filter-btn active" data-filter="all">All Eras</button>
+          <button class="filter-btn" data-filter="ancient">Ancient</button>
+          <button class="filter-btn" data-filter="classical">Classical</button>
+          <button class="filter-btn" data-filter="medieval">Medieval</button>
+          <button class="filter-btn" data-filter="modern">Modern</button>
+        </div>
+
+        <div class="timeline-view-switcher" role="radiogroup" aria-label="Timeline Mode">
+          <button class="view-btn active" data-view="horizontal" title="Horizontal Scrubber Showcase">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+              <line x1="2" y1="10" x2="22" y2="10"></line>
+            </svg>
+            Horizontal Showcase
+          </button>
+          <button class="view-btn" data-view="vertical" title="Vertical Documentary Feed">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="6" y1="3" x2="6" y2="21"></line>
+              <circle cx="18" cy="6" r="3"></circle>
+              <circle cx="18" cy="12" r="3"></circle>
+              <circle cx="18" cy="18" r="3"></circle>
+            </svg>
+            Vertical Feed
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Timeline Viewport -->
+      <div id="timeline-viewport">
+        <!-- Rendered dynamically by timeline.js -->
+      </div>
+    </div>
+  </section>
+
+  <hr class="sony-divider">
+
+  <!-- =========================================================================
+       4. Curated Artifact & Monument Lightbox Gallery
+       ========================================================================= -->
+  <section class="section-spacing" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">National Treasures</span>
+        <h2 class="section-title">Artifacts & Monumental Architecture</h2>
+        <p class="section-desc">
+          Preserved remnants of prehistoric metallurgy, classical granite carving, and sublime Indo-Islamic symmetry curated from Wikimedia Commons public domain archives.
+        </p>
+      </div>
+
+      <!-- Gallery Filter Controls -->
+      <div class="gallery-controls">
+        <div class="era-filter-group" role="tablist">
+          <button class="filter-btn gallery-filter-btn active" data-category="all">All Treasures</button>
+          <button class="filter-btn gallery-filter-btn" data-category="sculpture">Sculptures</button>
+          <button class="filter-btn gallery-filter-btn" data-category="architecture">Architecture</button>
+          <button class="filter-btn gallery-filter-btn" data-category="monument">Monuments</button>
+          <button class="filter-btn gallery-filter-btn" data-category="manuscript">Manuscripts</button>
+        </div>
+        <div style="font-size: 0.8rem; color: var(--text-tertiary);">
+          Click any card to open the <strong style="color: var(--text-secondary);">HD Darkroom Lightbox</strong>
+        </div>
+      </div>
+
+      <!-- Artifact Card Grid -->
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Rendered dynamically by gallery.js -->
+      </div>
+    </div>
+  </section>
+
+  <hr class="sony-divider">
+
+  <!-- =========================================================================
+       5. Imperial Dynasties & Empires Explorer
+       ========================================================================= -->
+  <section class="section-spacing" id="dynasties" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Sovereign Realms</span>
+        <h2 class="section-title">The Imperial Dynasties</h2>
+        <p class="section-desc">
+          Compare the peak territories, founders, statecraft, and defining cultural legacies of India's paramount ruling dynasties.
+        </p>
+      </div>
+
+      <div class="atlas-container">
+        <!-- Dynasty Sidebar Selector -->
+        <div class="dynasty-nav-list" id="dynasty-nav">
+          <!-- Rendered dynamically by atlas.js -->
+        </div>
+
+        <!-- Dynasty Detail Display -->
+        <div id="dynasty-display">
+          <!-- Rendered dynamically by atlas.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. Voices of History: Monumental Inscriptions & Quotes
+       ========================================================================= -->
+  <section class="quote-banner" id="voices">
+    <div class="container" id="quote-banner-content">
+      <!-- Rendered dynamically by app.js -->
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Sony Minimalist Footer
+       ========================================================================= -->
+  <footer class="sony-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>History of India</h4>
+          <p>
+            An aesthetic digital archive commemorating five millennia of civilizational achievement, philosophy, science, and sovereign heritage.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Epochs</h5>
+          <ul>
+            <li><a href="#chronology" onclick="HistoryApp.Timeline.openEraModal('indus-valley')">Indus Valley</a></li>
+            <li><a href="#chronology" onclick="HistoryApp.Timeline.openEraModal('classical-mauryas')">Maurya Empire</a></li>
+            <li><a href="#chronology" onclick="HistoryApp.Timeline.openEraModal('golden-age-guptas')">Gupta Golden Age</a></li>
+            <li><a href="#chronology" onclick="HistoryApp.Timeline.openEraModal('medieval-dynasties')">Imperial Cholas</a></li>
+            <li><a href="#chronology" onclick="HistoryApp.Timeline.openEraModal('modern-republic')">Modern Republic</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Archives</h5>
+          <ul>
+            <li><a href="#gallery">Monument Gallery</a></li>
+            <li><a href="#dynasties">Imperial Atlas</a></li>
+            <li><a href="#voices">Historical Inscriptions</a></li>
+            <li><a href="javascript:void(0)" onclick="HistoryApp.openDrawer('bookmarks')">Your Collection</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Attribution</h5>
+          <ul>
+            <li><a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a></li>
+            <li><a href="https://en.wikipedia.org/" target="_blank" rel="noopener noreferrer">Wikipedia Knowledgebase</a></li>
+            <li><a href="https://asi.nic.in/" target="_blank" rel="noopener noreferrer">Archaeological Survey of India</a></li>
+            <li><a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <span>Crafted with precision & reverence · 100% Client-Side Architecture</span>
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem;">
+          Public Domain & Creative Commons Attributions Applied
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       8. Global Lightbox Modal Inspector (Sony Darkroom)
+       ========================================================================= -->
+  <div class="modal-overlay" id="global-modal" role="dialog" aria-modal="true" aria-label="Historical Item Inspector">
+    <div id="modal-dynamic-content">
+      <!-- Injected dynamically by gallery.js or timeline.js -->
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       9. Slide-Over Search & Bookmarks Drawer
+       ========================================================================= -->
+  <div class="drawer-backdrop" id="global-drawer-backdrop">
+    <aside class="slide-drawer" role="complementary" aria-label="Search and Collection Drawer">
+      <div class="drawer-header">
+        <div class="flex-center" style="gap: 1rem;">
+          <button class="filter-btn active" id="drawer-tab-search" style="border-radius: var(--radius-xs);">Search Archive</button>
+          <button class="filter-btn" id="drawer-tab-bookmarks" style="border-radius: var(--radius-xs);">Your Collection</button>
+        </div>
+        <button class="btn-icon-only" onclick="HistoryApp.closeDrawer()" title="Close Drawer" aria-label="Close Drawer">✕</button>
+      </div>
+
+      <!-- Search Section -->
+      <div id="drawer-section-search">
+        <div class="drawer-search-input-wrap">
+          <svg class="drawer-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" 
+                 id="global-search-input" 
+                 class="drawer-search-input" 
+                 placeholder="Search eras, rulers, battles, artifacts..."
+                 autocomplete="off">
+        </div>
+
+        <div class="drawer-body">
+          <div class="search-results-list" id="search-results-list">
+            <div style="text-align: center; padding: 3rem 1rem; color: var(--text-tertiary);">
+              <p style="font-size: 0.9rem;">Type at least 2 characters to search across 5,000 years of history...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bookmarks Section -->
+      <div id="drawer-section-bookmarks" style="display: none;">
+        <div class="drawer-body">
+          <div class="bookmarks-list" id="bookmarks-items-list">
+            <!-- Rendered dynamically by app.js -->
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- =========================================================================
+       10. Modular Scripts (Zero-build, 100% file:/// and Web compatible)
+       ========================================================================= -->
+  <script src="js/data/eras.js"></script>
+  <script src="js/data/artifacts.js"></script>
+  <script src="js/data/dynasties.js"></script>
+  <script src="js/data/quotes.js"></script>
+  <script src="js/components/timeline.js"></script>
+  <script src="js/components/gallery.js"></script>
+  <script src="js/components/atlas.js"></script>
+  <script src="js/components/search.js"></script>
+  <script src="js/components/audio.js"></script>
+  <script src="js/components/quiz.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

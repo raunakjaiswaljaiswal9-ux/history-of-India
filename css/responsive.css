@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Responsive Styles: History of India
+   Mobile, Tablet, Desktop, and Touch Screen Breakpoints
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .atlas-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dynasty-nav-list {
+    flex-direction: row;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: var(--border-subtle);
+    padding-right: 0;
+    padding-bottom: 1rem;
+    scrollbar-width: none;
+  }
+
+  .dynasty-nav-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .dynasty-nav-item {
+    flex: 0 0 auto;
+    min-width: 180px;
+  }
+
+  .modal-card {
+    grid-template-columns: 1fr;
+    max-height: 94vh;
+    overflow-y: auto;
+  }
+
+  .modal-visual-side {
+    max-height: 380px;
+  }
+
+  .modal-info-side {
+    padding: 2rem 1.8rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+  }
+
+  .nav-links {
+    display: none; /* Can be opened or accessed via drawer/scroll */
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding-top: calc(var(--header-height) + 2.5rem);
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-cta-group {
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .timeline-era-card {
+    flex: 0 0 320px;
+  }
+
+  .vertical-timeline-wrap::before {
+    left: 18px;
+  }
+
+  .vertical-era-node {
+    padding-left: 50px;
+  }
+
+  .vertical-era-marker {
+    left: 10px;
+  }
+
+  .milestone-item {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dynasty-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Small Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .nav-brand {
+    font-size: 1.05rem;
+  }
+
+  .audio-toggle-btn span.label-text {
+    display: none;
+  }
+
+  .timeline-control-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-view-switcher {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .slide-drawer {
+    max-width: 100%;
+  }
+
+  .modal-overlay {
+    padding: 0.75rem;
+  }
+}

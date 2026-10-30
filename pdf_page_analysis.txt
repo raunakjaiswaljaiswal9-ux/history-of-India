@@ -1,0 +1,763 @@
+=== PAGE 1 (Images: 0) ===
+Page 1 of 68
+A
+PROJECT REPORT
+On
+AI STOCK ANALYSIS
+SUBMITTED BY
+...
+MUMBAI-400042
+(SEM V)
+(2026-27)
+
+=== PAGE 2 (Images: 0) ===
+Page 2 of 68
+Bhandup Educational Society's
+V.K. KRISHNA MENON COLLEGE OF COMMERCE &ECONOMICS AND
+SHARAD SHANKAR
+DIGHE COLLEGE OF SCIENCE AND P.A. MENON
+COLLEGE OF MANAGEMENT.
+...
+Department ComputerScience
+College Seal
+Signature of Examiner
+
+=== PAGE 3 (Images: 0) ===
+Page 3 of 68
+DECLARATION
+I, Mr. Sangharsh Sandesh Dubey hereby declare that the project
+entitled "AI Stock Analysis" submitted in the partial fulfilment for the
+award of Bachelor of Science in Computer Science during the
+academic year 2025-2026 is my original work and the project has not
+...
+Signature of the Student:
+Place:
+Date:
+
+=== PAGE 4 (Images: 0) ===
+Page 4 of 68
+ACKNOWLEDGEMENT
+I would like to extend my gratitude to our Mr.Prashant Rajan , our
+principal and all staff of V.K. Krishna Menon College for providing us
+moral support, a conducive work environment, and the much-
+needed inspiration to complete this project on time.
+...
+Finally, I thank all my fellow friends who have directly or indirectly
+helped me in
+completing my project.
+
+=== PAGE 5 (Images: 0) ===
+Page 5 of 68
+TABLE OF CONTENT
+Sr.No Contents Pg. No.
+1 Project Proposal 6-8
+2 Plagiarism Report 9-10
+3 Introduction 11
+...
+15 Conclusion 66
+16 Glossary 67
+17 References 68
+
+=== PAGE 6 (Images: 0) ===
+Page 6 of 68
+PROJECT PROPOSAL: AI Stock Analysis
+1. Title
+• Project Name: AI Stock Analysis
+• Domain: Financial Technology (FinTech), Generative Artificial
+Intelligence, Quantitative Data Analytics
+...
+Averages, and Bollinger Bands using real math on the server.
+• Dual-Chart Display: Uses TradingView as the main interactive chart,
+with an automatic backup to Yahoo Finance if TradingView is blocked.
+
+=== PAGE 7 (Images: 0) ===
+Page 7 of 68
+• AI Bull vs. Bear Debate: Shows both positive growth arguments and
+negative risks side-by-side with a final AI verdict.
+• IPO Radar & Predictor: Tracks upcoming and live IPOs, checks if
+promoters are cashing out, tracks Grey Market Premium (GMP), and
+warns against bad deals.
+...
+• Frontend: HTML5, CSS3 (Dark Synthwave
+Glassmorphism), JavaScript
+• Charts: TradingView Widget & Chart.js
+
+=== PAGE 8 (Images: 0) ===
+Page 8 of 68
+6. Timeline
+phase Duration Task
+planning  1 - week Requiremnts,Design
+Development  4-week Build Core
+Feature
+...
+summaries, the platform cuts through the noise and
+helps retail investors make smarter, safer investment
+decisions with confidence.
+
+=== PAGE 9 (Images: 1) ===
+Page 9 of 68
+2. PLAGIARISM REPORT
+...
+Page 9 of 68
+2. PLAGIARISM REPORT
+
+=== PAGE 10 (Images: 1) ===
+Page 10 of 68
+...
+Page 10 of 68
+
+=== PAGE 11 (Images: 0) ===
+Page 11 of 68
+3. INTRODUCTION
+In modern capital markets, retail investors face significant information asymmetry
+compared to institutional firms. The retail investing landscape is heavily
+fragmented, requiring individuals to navigate separate platforms for technical
+charts, financial ratios, and market news. Furthermore, while generative artificial
+...
+mathematics, and grounded artificial intelligence into a single, accessible
+dashboard that empowers retail investors with transparent, institutional-grade
+clarity.
+
+=== PAGE 12 (Images: 0) ===
+Page 12 of 68
+4. OBJECTIVES
+The primary objective of AI Stock Analysis is to design and implement an
+autonomous, web-based market intelligence and Initial Public Offering (IPO)
+evaluation platform that democratizes institutional-grade financial research for
+individual retail investors. By addressing the systemic problem of information
+...
+(SMA-20/200), and Bollinger Bands—and inject verified real-time
+numbers directly into the Gemini prompt payload before generating
+analytical narratives.
+
+=== PAGE 13 (Images: 0) ===
+Page 13 of 68
+3. To Implement a Resilient Dual-Chart Architecture: To integrate
+TradingView’s Advanced Candlestick Chart as the primary interactive
+canvas, while engineering an automatic failover to an internal Yahoo
+Finance Chart.js engine to ensure uninterrupted visualization when third-
+party licensing limits restrict domestic exchange indices.
+...
+lightweight SQLite3 database supporting role-based access control (Free
+versus Pro tier content gating), administrative approval workflows, and
+an accessible, high-contrast dark-mode glassmorphic user interface
+
+=== PAGE 14 (Images: 0) ===
+Page 14 of 68
+5. SCOPE
+The scope of AI Stock Analysis encompasses the architectural design, algorithmic
+implementation, and functional deployment of an end-to-end web-based market
+intelligence and public offering evaluation platform. The project is engineered to
+bridge the information asymmetry gap for retail investors by converting
+...
+debate mechanism that contrasts operational competitive moats against
+valuation and macroeconomic risks, resolved by an objective AI Judicial
+ratio and risk rating.
+
+=== PAGE 15 (Images: 0) ===
+Page 15 of 68
+• Initial Public Offering (IPO) Intelligence: Features a dedicated IPO Radar
+that decodes statutory Red Herring Prospectuses (DRHP), programmatically
+calculates the dilution split between growth-oriented Fresh Capital and
+promoter Offer for Sale (OFS) cash-outs, evaluates Grey Market Premium
+(GMP) listing estimates, monitors institutional QIB subscription heatmaps,
+...
+• IPO Applicants: Equips primary market bidders with objective DRHP risk
+scores, promoter dilution warnings, and peer valuation benchmarks before
+deploying capital.
+
+=== PAGE 16 (Images: 0) ===
+Page 16 of 68
+• System Administrators: Features an administrative back-office console for
+monitoring registered users, overriding subscription tiers, and auditing
+transaction approval requests.
+4. Technical & Architectural Scope
+• Backend Architecture: Developed entirely on Python 3.12 utilizing the Flask
+...
+• Public Telemetry Latency: Real-time market metrics ingested from public
+telemetry sources may carry standard non-institutional delays (typically 1 to
+15 minutes) subject to exchange public redistribution terms.
+
+=== PAGE 17 (Images: 0) ===
+Page 17 of 68
+6. METHODOLOGY
+The development of AI Stock Analysis follows an Iterative and Incremental Agile
+Methodology. This approach allows the system to be built, tested, and improved
+step-by-step, ensuring that live stock data, technical calculations, and artificial
+intelligence work together smoothly.
+...
+opportunity).
+• Moving Average Convergence Divergence (MACD): Identifies
+momentum and trend direction.
+
+=== PAGE 18 (Images: 0) ===
+Page 18 of 68
+• Moving Averages (SMA 20 & 200): Highlights short-term and long-
+term trend support.
+• Bollinger Bands: Measures market volatility and price range
+extremes.
+Phase 4: Grounded AI Analysis (Google Gemini)
+...
+Technology Role in the Project
+Python & Flask Manages the backend server, user sessions, routes, and
+data flow.
+
+=== PAGE 19 (Images: 0) ===
+Page 19 of 68
+Technology Role in the Project
+Google Gemini AI Acts as an intelligent equity analyst, summarizing data into
+human-readable reports.
+SQLite3 Database Stores user logins, watchlists, payment approval records,
+and IPO data locally.
+...
+3. Plan Gating: Verified that Free users see basic data with blurred premium
+sections, while Pro users have full access to advanced indicators and IPO
+audits.
+
+=== PAGE 20 (Images: 0) ===
+Page 20 of 68
+7. REQUIREMENT SPECIFICATION
+The Requirement Specification details the hardware, software, functional, and non-
+functional requirements necessary to build, run, and maintain the AI Stock
+Analysis platform.
+Hardware Requirements
+...
+Programming
+Language Python 3.10 / 3.12 Primary language for backend logic
+and math computation
+
+=== PAGE 21 (Images: 0) ===
+Page 21 of 68
+Category Tool / Technology Purpose
+Web Framework Flask 3.x Lightweight web framework for
+routing and session handling
+Database SQLite3 Local relational database for users,
+watchlists, and IPO data
+...
+• Automatically converts common company names (e.g., "APPLE", "RELIANCE",
+"BITCOIN") into official exchange tickers (NASDAQ:AAPL, NSE:RELIANCE,
+BINANCE:BTCUSDT).
+
+=== PAGE 22 (Images: 0) ===
+Page 22 of 68
+• Live Market Telemetry Ingestion:
+• Scrapes real-time fundamental data (P/E Ratio, Market Cap, EPS, 52-Week
+High/Low, Volume) and downloads 6-month historical daily closing prices.
+• Server-Side Technical Calculations:
+• Programmatically calculates RSI-14, MACD, 20-day and 200-day Simple
+...
+• Users can add and remove favorite stocks to track them easily from the
+sidebar.
+• Admin Management Console:
+
+=== PAGE 23 (Images: 0) ===
+Page 23 of 68
+• Allows administrators to review registered users, approve subscription
+payments, and manually change account plans.
+Non-Functional Requirements
+• Performance & Speed: Search queries and full AI analysis reports should load within
+3 to 6 seconds under normal internet speed.
+...
+interface that is easy to navigate on both desktop and mobile devices.
+• Maintainability & Portability: Uses a clean, lightweight Python/Flask structure and
+an embedded SQLite database that runs easily without complex setup.
+
+=== PAGE 24 (Images: 0) ===
+Page 24 of 68
+8. FEASIBILITY STUDY
+A Feasibility Study evaluates whether the AI Stock Analysis platform is practical,
+viable, and sustainable across technical, economic, operational, schedule, and
+legal dimensions.
+1. Technical Feasibility
+...
+IDE Paid Proprietary Software ₹0 (VS Code, Python, Flask —
+Open Source)
+Database Engine Commercial Cloud SQL ₹0 (SQLite3 — Local & Free)
+
+=== PAGE 25 (Images: 0) ===
+Page 25 of 68
+Component Commercial Financial Tools AI Stock Analysis Project
+Market Data
+Feeds
+Bloomberg / Reuters
+($2,000+/mo)
+...
+• Verdict: Operationally Feasible. The system is intuitive, addresses acute
+user needs, and requires no specialized user training.
+4. Schedule Feasibility
+
+=== PAGE 26 (Images: 0) ===
+Page 26 of 68
+The project was designed to be planned, developed, and tested within a
+standard 10 to 12-week academic timeline:
+• Weeks 1 – 4: Architecture setup, SQLite database design, user
+authentication, and live market data scraping.
+• Weeks 5 – 8: Server-side mathematical indicators (RSI, MACD), Gemini AI
+...
+viable with near-zero development expense, operationally simple to use, delivered
+on schedule, and legally compliant. Therefore, the project is fully feasible and
+well-suited for practical deployment.
+
+=== PAGE 27 (Images: 0) ===
+Page 27 of 68
+9. GANTT CHART & PROJECT TIMELINE
+The development lifecycle of the AI Stock Analysis platform followed a structured 7-week Agile
+Sprint model. The project prioritized early stabilization of real-time market data ingestion and local
+quantitative indicator math before integrating cloud-based generative AI reasoning and interactive
+client-side charting canvases.
+...
+QuantSynthesis Failover, (5) Responsive User Interface & Interactive Financial Charting, (6) Role-
+Based Access Control, Payment Verification & System Security Auditing, and (7) Multi-Scenario
+Stress Testing, Quality Assurance & Deployment.
+
+=== PAGE 28 (Images: 1) ===
+Page 28 of 68
+...
+Page 28 of 68
+
+=== PAGE 29 (Images: 0) ===
+Page 29 of 68
+Figure 9.1: Project Development Lifecycle Gantt Chart and Sprint Milestones
+10. SYSTEM DESIGN
+The system design defines the overall architecture, software components, operational
+modules, interfaces, and data flow required to implement the AI-Powered Stock Analysis
+and Decision Support Platform. Built upon a decoupled multi-tier architectural pattern, the
+...
+Provides a cross-device, mobile-first web interface allowing retail investors to query
+financial assets, review buy/sell verdicts, track watchlists, and manage subscription
+profiles with zero client installation requirements.
+
+=== PAGE 30 (Images: 0) ===
+Page 30 of 68
+• 2.2 Interactive Financial Charting Engine (Chart.js):
+Renders client-side dynamic candlestick and line graphs displaying six-month
+historical price movements, closing trajectories, and technical overlays. Executing
+graphic rendering directly within the browser’s HTML5 canvas eliminates image-
+generation overhead on the Flask backend.
+...
+• Moving Average Convergence Divergence (MACD): Derives the 12-day and
+26-day Exponential Moving Averages (EMA) alongside a 9-day signal line to
+detect bullish and bearish trend crossovers.
+
+=== PAGE 31 (Images: 0) ===
+Page 31 of 68
+• Simple Moving Averages (SMA 20 & SMA 200): Establishes short-term
+momentum and institutional long-term support trends.
+• Bollinger Bands: Computes a 20-day moving average baseline accompanied
+by upper and lower boundaries set at ±2 standard deviations to assess
+market volatility.
+...
+paragraphs referencing actual price targets and valuation multiples.
+• AI Judge Verdict: An impartial synthesis balancing upside potential against
+market headwinds.
+
+=== PAGE 32 (Images: 0) ===
+Page 32 of 68
+• Macro Stress-Testing Coefficients: Sensitivity scores estimating performance
+impact under fluctuating interest rates, inflation, and GDP growth.
+• 4.3 Automated AI Model Failover Protocol:
+Implements a dual-endpoint failover strategy. Incoming analysis payloads are first
+dispatched to the primary high-capacity model (gemini-1.5-flash). If network
+...
+6.1  Input Ingestion & Sanitization (Search query received via POST)
+│
+▼
+
+=== PAGE 33 (Images: 0) ===
+Page 33 of 68
+6.2  Session & Subscription Verification (Query `users` table for Free vs. Pro tier)
+│
+▼
+6.3  Ticker Resolution (Convert colloquial company name to formal Yahoo ticker)
+│
+...
+exchange-compatible symbol (e.g., "Reliance" → RELIANCE.NS).
+• 6.4 External Data Ingestion: The scraper collects 6-month historical prices and
+current valuation ratios (𝑃/𝐸, 𝐸𝑃𝑆, Market Cap) via Yahoo Finance endpoints.
+
+=== PAGE 34 (Images: 0) ===
+Page 34 of 68
+• 6.5 Mathematical Technical Computation: The quantitative engine calculates 14-day
+RSI, MACD signal lines, 20/200-day SMAs, Bollinger Bands, and support/resistance
+boundaries.
+• 6.6 AI Prompt Assembly & Execution: For Pro users, all calculated metrics are
+structured into a prompt and submitted to Google Gemini API (with automatic
+...
+User search queries are preserved within secure client session objects (maintaining
+the last 5 searched stocks) to allow rapid re-querying without redundant database
+writes.
+
+=== PAGE 35 (Images: 1) ===
+Page 35 of 68
+...
+Page 35 of 68
+
+=== PAGE 36 (Images: 0) ===
+Page 36 of 68
+Figure 10.0: High-Level System Architecture and Multi-Tier Processing Pipeline
+10.1 Entity-Relationship (ER) Diagram
+The Entity-Relationship (ER) model formalizes the logical and physical data relationships governing
+the platform's local serverless relational database (database.db). The persistence architecture is
+designed around four normalized entities to eliminate data redundancy and guarantee ACID
+...
+•  ipos Entity: Acts as an independent institutional intelligence repository cataloging lot sizes,
+price bands, issue capitalization, Fresh Issue vs. Offer for Sale (OFS) capital splits, Grey Market
+Premiums (GMP), and automated risk ratings.
+
+=== PAGE 37 (Images: 1) ===
+Page 37 of 68
+Figure 10.1: Entity-Relationship (ER) Diagram of the Relational Data Model
+...
+Page 37 of 68
+Figure 10.1: Entity-Relationship (ER) Diagram of the Relational Data Model
+
+=== PAGE 38 (Images: 1) ===
+Page 38 of 68
+10.2 Class Diagram & Object Architecture
+The Unified Modeling Language (UML) Class Diagram illustrates the object-oriented software
+architecture of the platform. The application is built upon a modular Controller-Service-Entity design
+pattern, ensuring that computational quantitative mathematics, database persistence, and cloud AI
+reasoning remain cleanly decoupled:
+...
+pattern, ensuring that computational quantitative mathematics, database persistence, and cloud AI
+reasoning remain cleanly decoupled:
+Figure 10.2: UML Class Diagram detailing Object-Oriented Software Architecture and Component Interfaces
+
+=== PAGE 39 (Images: 1) ===
+Page 39 of 68
+10.3 Activity Diagram & Operational Workflow
+The UML Activity Diagram delineates the step-by-step operational lifecycle and data transformations
+across four architectural swimlanes: Presentation Tier, Controller Tier, Quantitative Engine, and Cloud
+AI / External Services:
+Figure 10.3: UML Activity Diagram illustrating Concurrent Data Ingestion, Execution Swimlanes, and AI
+...
+AI / External Services:
+Figure 10.3: UML Activity Diagram illustrating Concurrent Data Ingestion, Execution Swimlanes, and AI
+Failover Workflow
+
+=== PAGE 40 (Images: 1) ===
+Page 40 of 68
+10.4 Use Case Diagram & Actor Interactions
+The UML Use Case Diagram defines the functional boundary of the platform, specifying interactions
+between human user actors and external service systems across clearly demarcated security and
+subscription levels:
+Figure 10.4: UML Use Case Diagram defining Functional Capabilities, Security Boundaries, and Actor Roles
+...
+between human user actors and external service systems across clearly demarcated security and
+subscription levels:
+Figure 10.4: UML Use Case Diagram defining Functional Capabilities, Security Boundaries, and Actor Roles
+
+=== PAGE 41 (Images: 0) ===
+Page 41 of 68
+11. CODE IMPLEMENTATION
+This section outlines the core software implementation of the AI-Powered Stock Analysis
+and Decision Support Platform. The codebase is structured using Python, the Flask web
+framework, SQLite for relational persistence, Chart.js for client-side rendering, and the
+Google Gemini Generative AI API for financial reasoning.
+...
+username TEXT,
+transaction_id TEXT,
+status TEXT
+
+=== PAGE 42 (Images: 0) ===
+Page 42 of 68
+)
+''')
+# 3. User Portfolio Watchlist
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS watchlist (
+...
+qib_sub TEXT,
+nii_sub TEXT,
+retail_sub TEXT,
+
+=== PAGE 43 (Images: 0) ===
+Page 43 of 68
+total_sub TEXT,
+ai_verdict TEXT,
+ai_risk_score REAL,
+ai_financial_score REAL,
+ai_summary TEXT,
+...
+"MICROSOFT": "MSFT", "MSFT": "MSFT",
+"AMAZON": "AMZN", "AMZN": "AMZN",
+"TESLA": "TSLA", "TSLA": "TSLA",
+
+=== PAGE 44 (Images: 0) ===
+Page 44 of 68
+"NVIDIA": "NVDA", "NVDA": "NVDA",
+# Indian Equities (NSE)
+"RELIANCE": "RELIANCE.NS",
+"TCS": "TCS.NS",
+"INFOSYS": "INFY .NS", "INFY": "INFY .NS",
+...
+import requests
+import datetime
+import re
+
+=== PAGE 45 (Images: 0) ===
+Page 45 of 68
+def fetch_yfinance_chart(symbol):
+"""
+Retrieves 6-month historical closing prices for charting and technical modeling.
+"""
+y_symbol = resolve_ticker(symbol)
+...
+url = f"https://finance.yahoo.com/quote/{y_symbol}"
+headers = {
+'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+
+=== PAGE 46 (Images: 0) ===
+Page 46 of 68
+}
+metrics = {
+"pe_ratio": "N/A", "market_cap": "N/A", "dividend_yield": "N/A",
+"eps": "N/A", "fifty_two_week_range": "N/A", "volume": "N/A", "current_price": "N/A"
+}
+...
+Calculates 14-period Relative Strength Index (RSI).
+"""
+if len(prices) < period + 1:
+
+=== PAGE 47 (Images: 0) ===
+Page 47 of 68
+return "N/A", "NEUTRAL"
+gains, losses = [], []
+for i in range(1, len(prices)):
+change = prices[i] - prices[i-1]
+gains.append(change if change > 0 else 0)
+...
+def calculate_macd(prices):
+"""
+Calculates Moving Average Convergence Divergence (MACD 12/26/9).
+
+=== PAGE 48 (Images: 0) ===
+Page 48 of 68
+"""
+if len(prices) < 26:
+return "N/A", "NEUTRAL"
+def get_ema(values, period):
+multiplier = 2 / (period + 1)
+...
+variance = sum((x - sma) ** 2 for x in last_20) / period
+std_dev = variance ** 0.5
+upper_band = round(sma + (2 * std_dev), 1)
+
+=== PAGE 49 (Images: 0) ===
+Page 49 of 68
+lower_band = round(sma - (2 * std_dev), 1)
+current_price = prices[-1]
+signal = "BEARISH" if current_price > upper_band else ("BULLISH" if current_price < lower_band else "NEUTRAL")
+return f"{lower_band} - {upper_band}", signal
+def calculate_support_resistance(prices, is_indian=False):
+...
+structured prompt schema with an automated multi-model failover mechanism.
+python
+def run_ai_analysis(stock_ticker, current_price, pe_ratio, market_cap, indicators, price_targets, current_plan):
+
+=== PAGE 50 (Images: 0) ===
+Page 50 of 68
+"""
+Dispatches context-rich prompt to Google Gemini LLM with automated fallback handling.
+"""
+api_key = "YOUR_GEMINI_API_KEY"
+prompt = f"""
+...
+try:
+response = requests.post(primary_url, json=payload, headers=headers, timeout=12)
+except requests.exceptions.RequestException:
+
+=== PAGE 51 (Images: 0) ===
+Page 51 of 68
+pass
+# 2. Automated Fallback: gemini-1.5-flash-lite
+if response is None or response.status_code != 200:
+fallback_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-
+lite:generateContent?key={api_key}"
+...
+if 'username' not in session:
+return redirect(url_for('login'))
+conn = sqlite3.connect('database.db')
+
+=== PAGE 52 (Images: 0) ===
+Page 52 of 68
+cursor = conn.cursor()
+cursor.execute("SELECT plan FROM users WHERE username=?", (session['username'],))
+user_row = cursor.fetchone()
+plan = user_row[0] if user_row else 'Free'
+cursor.execute("SELECT stock_symbol FROM watchlist WHERE username=?", (session['username'],))
+...
+session['history'] = history[:5]
+session.modified = True
+# Check user subscription plan
+
+=== PAGE 53 (Images: 0) ===
+Page 53 of 68
+conn = sqlite3.connect('database.db')
+cursor = conn.cursor()
+cursor.execute("SELECT plan FROM users WHERE username=?", (session['username'],))
+current_plan = cursor.fetchone()[0]
+conn.close()
+...
+# Invoke AI Engine
+ai_data = run_ai_analysis(stock_ticker, scraped["current_price"], scraped["pe_ratio"],
+scraped["market_cap"], indicators, price_targets, current_plan)
+
+=== PAGE 54 (Images: 0) ===
+Page 54 of 68
+return render_template('index.html', stock=stock_ticker, plan=current_plan,
+recommendation=ai_data.get("recommendation", "HOLD"),
+judge_verdict=ai_data.get("judge_verdict", ""),
+bull_case=ai_data.get("bull_case", ""),
+bear_case=ai_data.get("bear_case", ""),
+...
+borderColor: '#1b4f72',
+backgroundColor: 'rgba(27, 79, 114, 0.08)',
+fill: true,
+
+=== PAGE 55 (Images: 0) ===
+Page 55 of 68
+tension: 0.2,
+pointRadius: 1,
+borderWidth: 2
+}]
+},
+...
+});
+}
+</script>
+
+=== PAGE 56 (Images: 0) ===
+Page 56 of 68
+12. DATABASE DESIGN & RELATIONAL SCHEMA
+SPECIFICATIONS
+The persistence layer of the platform utilizes an embedded SQLite3 relational database engine
+(database.db). SQLite provides a zero-configuration, serverless, self-contained SQL database engine
+capable of handling high-throughput read transactions with zero client-server IPC latency.
+...
+addition.
+Table 12.4: `ipos` Table Schema
+Comprehensive institutional repository cataloging primary market initial public offerings.
+
+=== PAGE 57 (Images: 0) ===
+Page 57 of 68
+•  id (INTEGER, PRIMARY KEY AUTOINCREMENT): Unique IPO corporate entity
+identifier.
+•  company_name (TEXT, NOT NULL): Full legal commercial entity name.
+•  price_band (TEXT, NOT NULL): Statutory issue price range per equity share.
+•  lot_size (INTEGER, NOT NULL): Minimum lot bid quantity.
+...
+•  gmp (TEXT, NOT NULL): Real-time Grey Market Premium percentage and listing estimate.
+•  drhp_summary (TEXT, NOT NULL): Structured analysis of Red Herring Prospectus,
+dilution split, and AI risk verdict.
+
+=== PAGE 58 (Images: 1) ===
+Page 58 of 68
+Figure 12.1: Relational Database Schema and Physical Entity-Relationship Architecture
+...
+Page 58 of 68
+Figure 12.1: Relational Database Schema and Physical Entity-Relationship Architecture
+
+=== PAGE 59 (Images: 1) ===
+Page 59 of 68
+13. SCREENSHOTS OF THE APPLICATION
+1.INTRODUCTION:
+The AI-Powered Stock Analysis and Decision Support Platform is an intelligent
+equity research terminal that combines quantitative mathematical modeling with
+generative artificial intelligence. It automatically ingests real-time market data,
+...
+dashboard.
+2.SCREENSHOT with Caption:
+1. Authentication & Login Portal
+
+=== PAGE 60 (Images: 2) ===
+Page 60 of 68
+2. Search Terminal & Ticker Normalizer
+3.Real-Time Fundamental Financial Metrics
+...
+Page 60 of 68
+2. Search Terminal & Ticker Normalizer
+3.Real-Time Fundamental Financial Metrics
+
+=== PAGE 61 (Images: 2) ===
+Page 61 of 68
+4. Interactive Charting & Watchlist Suite
+5. Algorithmic Technical Indicators (RSI, MACD, etc.)
+...
+Page 61 of 68
+4. Interactive Charting & Watchlist Suite
+5. Algorithmic Technical Indicators (RSI, MACD, etc.)
+
+=== PAGE 62 (Images: 1) ===
+Page 62 of 68
+6. Dynamic Price Targets & Corridors
+...
+Page 62 of 68
+6. Dynamic Price Targets & Corridors
+
+=== PAGE 63 (Images: 2) ===
+Page 63 of 68
+7. Google Gemini AI Investment Verdict
+8. AI Macro Stress Simulator
+...
+Page 63 of 68
+7. Google Gemini AI Investment Verdict
+8. AI Macro Stress Simulator
+
+=== PAGE 64 (Images: 2) ===
+Page 64 of 68
+9. IPO Intelligence Radar & GMP Predictor
+10. Administrative Operations Center
+...
+Page 64 of 68
+9. IPO Intelligence Radar & GMP Predictor
+10. Administrative Operations Center
+
+=== PAGE 65 (Images: 0) ===
+Page 65 of 68
+14. FUTURE SCOPE
+The AI Stock Analyzer provides a robust foundation for automated market intelligence.
+Future development will focus on scaling the system from an advisory web platform into an
+autonomous, real-time institutional trading ecosystem through the following enhancements:
+• Automated Broker Integration & Algorithmic Trading:
+...
+Implementing SHAP/LIME interpretability frameworks to clearly show investors the
+mathematical reasoning behind each recommendation while maintaining full
+compliance with statutory exchange guidelines.
+
+=== PAGE 66 (Images: 0) ===
+Page 66 of 68
+15. CONCLUSION
+The AI-Powered Stock Analysis and Decision Support Platform successfully addresses the critical
+challenges faced by modern retail investors: market data fragmentation, analytical complexity,
+information asymmetry in primary IPO markets, and the persistent danger of artificial intelligence
+hallucinations.
+...
+In conclusion, the platform establishes a reproducible, production-ready benchmark for next-
+generation financial technology applications, providing individual investors with a transparent,
+resilient, and intelligent decision-support terminal.
+
+=== PAGE 67 (Images: 0) ===
+Page 67 of 68
+16. GLOSSARY
+Term Definition
+User A person who accesses the platform to analyze stocks, view watchlists, or subscribe to Pro
+features.
+Dashboard The main user interface displaying real-time stock charts, financial metrics, and AI analysis
+...
+Design approach ensuring the platform functions seamlessly across desktops, tablets, and
+mobile devices.
+Deployment The process of hosting and running the application online on a server for user access.
+
+=== PAGE 68 (Images: 0) ===
+Page 68 of 68
+17. REFERENCES
+1. Python Documentation. (n.d.). Python 3 Language Reference and Standard
+Library. Retrieved from https://www.python.org/doc
+2. Flask Documentation. (n.d.). A Lightweight WSGI Web Application
+Framework for Python. Retrieved from https://flask.palletsprojects.com
+...
+Tutorials. Retrieved from https://www.w3schools.com
+10. Investopedia. (n.d.). Financial Valuation Metrics, Technical Indicators (RSI,
+MACD), and IPO Analysis. Retrieved from https://www.investopedia.com
+

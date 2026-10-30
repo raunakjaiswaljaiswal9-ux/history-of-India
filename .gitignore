@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary / Scratch Test Files
+test_*.py
+test_*.docx
+check_*.py
+inspect_*.py
+dump_*.py
+audit_*.py
+*.tmp

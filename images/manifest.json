@@ -1,0 +1,68 @@
+{
+  "indus_valley": {
+    "local": "images/indus_valley.jpg",
+    "wiki_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Indus_Valley_Civilization%2C_Mature_Phase_%282600-1900_BCE%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "title": "Indus Valley Civilisation",
+    "extract": "The Indus Valley Civilisation (IVC), also known as the Indus Civilisation, was a Bronze Age civilisation in the northwestern regions of South Asia, lasting from 3300\u00a0BCE to 1300\u00a0BCE, and in its mature"
+  },
+  "mohenjo_daro": {
+    "local": "images/mohenjo_daro.jpg",
+    "wiki_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Mohenjodaro_-_view_of_the_stupa_mound.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "title": "Mohenjo-daro",
+    "extract": "Mohenjo-daro is an archaeological site in the Larkana District of Sindh, Pakistan. Built c.\u20092500 BCE, it was one of the largest settlements of the ancient Indus Valley Civilisation, and one of the wor"
+  },
+  "priest_king": {
+    "local": "images/priest_king.jpg",
+    "wiki_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Mohenjo-daro_Priesterk%C3%B6nig.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "title": "Priest-King (sculpture)",
+    "extract": "The Priest-King, in Pakistan often King-Priest, is a small male figure sculpted in steatite found during the excavation of the ruined Bronze Age city of Mohenjo-daro in Sindh, now Pakistan, in 1925 or"
+  },
+  "dancing_girl": {
+    "local": "images/dancing_girl.jpg",
+    "wiki_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Dancing_girl_of_Mohenjo-daro.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "title": "Dancing Girl (prehistoric sculpture)",
+    "extract": "The Dancing Girl is a bronze sculpture made in lost-wax casting around c.\u20092300\u20131750 BC in the Indus Valley Civilisation city of Mohenjo-daro, which was one of the earliest cities. The statue is 10.5 c"
+  },
+  "ashoka_lion": {
+    "local": "images/ashoka_lion.jpg",
+    "wiki_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Sarnath_capital.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "title": "Lion Capital of Ashoka",
+    "extract": "The Lion Capital of Ashoka is the capital, or head, of a column erected by the Mauryan emperor Ashoka in Sarnath, India, c.\u2009250 BCE. Its crowning features are four life-sized lions set back to back on"
+  },
+  "ashoka_pillar": {
+    "local": "images/ashoka_pillar.jpg",
+    "wiki_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Ashoka_pillar_at_Vaishali%2C_Bihar%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "title": "Pillars of Ashoka",
+    "extract": "The pillars of Ashoka are a series of monolithic columns dispersed throughout the Indian subcontinent, erected\u2014or at least inscribed with edicts\u2014by the 3rd Mauryan Emperor Ashoka the Great, who reigne"
+  },
+  "brihadisvara": {
+    "local": "images/brihadisvara.jpg",
+    "wiki_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/3840px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "title": "Brihadisvara Temple",
+    "extract": "Brihadisvara Temple, called Rajarajesvaram by its builder, and known locally as Thanjai Periya Kovil and Peruvudaiyar Kovil, is a Shaivite Hindu temple built in a Chola architectural style located on "
+  },
+  "hampi_chariot": {
+    "local": "images/hampi_chariot.jpg",
+    "wiki_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Wide_angle_of_Galigopuram_of_Virupaksha_Temple%2C_Hampi_%2804%29_%28cropped%29.jpg/3840px-Wide_angle_of_Galigopuram_of_Virupaksha_Temple%2C_Hampi_%2804%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "title": "Hampi",
+    "extract": "Hampi or Hampe, also referred to as the Group of Monuments at Hampi, is a UNESCO World Heritage Site located in the town of Hampi in Vijayanagara district, east-central Karnataka, India. Hampi predate"
+  },
+  "taj_mahal": {
+    "local": "images/taj_mahal.jpg",
+    "size": 258377
+  },
+  "red_fort": {
+    "local": "images/red_fort.jpg",
+    "size": 213784
+  },
+  "golden_temple": {
+    "local": "images/golden_temple.jpg",
+    "wiki_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/3840px-The_Golden_Temple_of_Amrithsar_7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "title": "Golden Temple",
+    "extract": "The Golden Temple is a gurdwara located in Amritsar, Punjab, India. It is the pre-eminent spiritual site of Sikhism and its holiest site. The gurdwara complex is a collection of buildings around the s"
+  },
+  "gandhi_salt_march": {
+    "local": "images/gandhi_salt_march.jpg",
+    "size": 3181761
+  }
+}
